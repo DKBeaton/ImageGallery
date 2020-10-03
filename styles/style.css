@@ -1,0 +1,22 @@
+/* Global */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+
+}
+
+body {
+  background: #da8e1e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4d5838, #da8e1e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4d5838, #da8e1e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
