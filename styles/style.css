@@ -75,6 +75,14 @@ body {
   grid-row: span 4;
 }
 
+.item.v5 {
+  grid-row: span 5;
+}
+
+.item.v6 {
+  grid-row: span 6;
+}
+
 .item.h2 {
   grid-column: span 2;
 }
@@ -86,6 +94,15 @@ body {
 .item.h4 {
   grid-column: span 4;
 }
+
+.item.h5 {
+  grid-column: span 5;
+}
+
+.item.h6 {
+  grid-column: span 6;
+}
+
 
 /* Overlay */
 
@@ -150,8 +167,8 @@ body {
 
 .gallery-toolbar {
   display: flex;
-  padding: 10px;
-  margin-right: 5px;
+  padding-right: 1rem;
+  padding-top: 10px;
   justify-content: flex-end;
 }
 
@@ -169,3 +186,41 @@ body {
 .fa-th-large.active {
   color: #fff;
 }
+
+/* Tooltip */
+
+.tooltip {
+  position: relative;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 5px;
+  margin-left: -5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
