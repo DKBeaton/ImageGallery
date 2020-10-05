@@ -83,6 +83,14 @@ body {
   grid-row: span 6;
 }
 
+.item.v7 {
+  grid-row: span 7;
+}
+
+.item.v8 {
+  grid-row: span 8;
+}
+
 .item.h2 {
   grid-column: span 2;
 }
@@ -103,6 +111,13 @@ body {
   grid-column: span 6;
 }
 
+.item.h7 {
+  grid-column: span 7;
+}
+
+.item.h8 {
+  grid-column: span 8;
+}
 
 /* Overlay */
 
@@ -187,6 +202,19 @@ body {
   color: #fff;
 }
 
+svg {
+  margin-top: 6px;
+  margin-left: 4px;
+  fill: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+}
+
+.filled {
+  fill: #fff;
+}
+
 /* Tooltip */
 
 .tooltip {
@@ -207,6 +235,7 @@ body {
   z-index: 1;
   font-size: 0.9rem;
   padding: 10px;
+  font-weight: 900;
 }
 
 .tooltiptext::after {
