@@ -17,10 +17,9 @@ gallery.innerHTML = html;
 const items = document.querySelectorAll('.item');
 items.forEach(item => defaultClassList.push([].slice.call(item.classList)))
 
-// Add addEventListener for click event
+// Event Listeners
 items.forEach(item => item.addEventListener('click', clickFunction));
 
-// Overlay
 overlay.addEventListener('click', () => {
   overlay.classList.remove('open');
 })
@@ -29,7 +28,6 @@ overlayBtn.addEventListener('click', () => {
   overlay.classList.remove('open');
 });
 
-// Toolbar
 stackedBtn.addEventListener('click', () => {
 
   // Remove gap class
@@ -55,7 +53,6 @@ waterfallBtn.addEventListener('click', () => {
 
 })
 
-// Gap button event listener
 gapBtn.addEventListener('click', () => {
 
   // Add gap class into gallery
@@ -106,8 +103,6 @@ function unWaterfallEffect() {
 
 function waterfallEffect(item) {
   let rowSpan = Math.ceil(item.querySelector('img').naturalHeight / 100);
-
-  // Remove all classes (learn a better way to do this, like RegEx)
   item.classList.remove(...item.classList);
   item.classList.add('item', 'h' + 2, 'v' + rowSpan);
 }
